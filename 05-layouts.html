@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+	<head>
+			<title>HTML Layouts</title>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width-device-width, initial-scale=1">
+			<style>	
+				* {
+			  box-sizing: border-box;
+			}
+
+			body {
+			  font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Style the header */
+			header {
+			  background-color: #666;
+			  padding: 30px;
+			  text-align: center;
+			  font-size: 35px;
+			  color: white;
+			}
+
+			/* Create two columns/boxes that floats next to each other */
+			nav {
+			  float: left;
+			  width: 30%;
+			   
+			  background: #ccc;
+			  padding: 20px;
+			}
+
+			/* Style the list inside the menu */
+			nav ul {
+			  list-style-type: none;
+			  padding: 0;
+			}
+
+			article {
+			  float: left;
+			  padding: 20px;
+			  width: 70%;
+			  background-color: #f1f1f1;
+			}
+
+			/* Clear floats after the columns */
+			section::after {
+			  background: #ccc;
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+
+			/* Style the footer */
+			footer {
+			  background-color: #777;
+			  padding: 10px;
+			  text-align: center;
+			  color: white;
+			}
+
+			/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+			@media (max-width: 600px) {
+			  nav, article {
+			    width: 100%;
+			    height: auto;
+			  }
+			}
+			</style> 
+	</head>
+
+	<body>
+		<header>
+
+			<h2>Título da página</h2>
+
+		</header>
+
+		<section>
+
+			<nav>
+				<ul>
+					<li><a href="#inicio">Home</a></li>
+					<li><a href="#sobre">Sobre</a></li>
+					<li><a href="#contato">Contato</a></li>
+				</ul>
+			</nav>
+
+			<article>
+
+				<h1>Título Artigo</h1>
+
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod nibh ante, eu pharetra mi rutrum a. Donec dapibus mauris non nunc viverra rutrum. Etiam accumsan cursus turpis, in accumsan lectus pulvinar vitae. Ut quis euismod nulla, a commodo nulla. In consectetur tortor sit amet risus mollis bibendum. Nam dolor lacus, suscipit et metus dapibus, eleifend facilisis eros. Donec sit amet nulla ornare, fermentum velit vel, vulputate diam. Maecenas laoreet tellus ut ligula vestibulum, a sagittis augue malesuada. Sed vitae nunc tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam metus lectus, accumsan in hendrerit et, facilisis quis eros. Duis et iaculis eros. Mauris orci risus, faucibus at suscipit nec, ultrices sit amet nulla. Vestibulum eu leo pulvinar, ultricies lacus vel, facilisis risus.
+
+				<p>Mauris vulputate ut mauris in porta. Integer placerat est sed neque tempus efficitur. Praesent vel feugiat lorem. Nullam condimentum convallis ante sit amet ornare. Donec lobortis facilisis ipsum at ornare. Curabitur egestas metus a varius mollis. Fusce sagittis, orci vitae accumsan viverra, massa ligula gravida sem, a egestas purus quam ac diam. Etiam vehicula ligula eget lacinia consectetur. Phasellus facilisis eros nec elit molestie lacinia. Maecenas blandit justo id magna rutrum bibendum. Sed at placerat est, eget suscipit leo. Nunc malesuada dictum nibh nec sagittis. Pellentesque non elit sit amet purus rhoncus dignissim non sit amet tellus. Quisque sit amet dapibus massa, eget sagittis est. Donec arcu tortor, euismod nec venenatis eget, tristique id dui.</p>
+
+				<p>Vestibulum dapibus placerat mauris, non dignissim ex convallis et. Aenean dictum neque in felis suscipit fringilla. Donec ante odio, consequat eu diam sed, tincidunt dapibus ipsum. Praesent ultrices ornare velit nec eleifend. Curabitur ut diam laoreet, eleifend dolor quis, tempus quam. Morbi et urna non augue tristique maximus. Curabitur vitae sapien id risus eleifend bibendum. Fusce vehicula tellus in nulla accumsan, eget vulputate tortor laoreet. Vestibulum scelerisque, tortor id vehicula ornare, ante nibh tempor quam, et finibus dolor justo eget libero. Etiam semper eget dui sed eleifend.</p>
+
+				<p>Sed quis est ultrices, accumsan metus et, maximus odio. Vivamus neque neque, lacinia vel pretium eu, gravida non mauris. Nulla facilisis urna ante, et placerat dolor faucibus non. Duis eu tristique sapien, at malesuada neque. Cras velit neque, commodo eget purus in, porttitor auctor eros. Donec porttitor nibh nibh, ac sodales sem aliquet facilisis. Fusce sit amet semper dolor. Aenean mauris risus, ullamcorper quis nibh imperdiet, pretium semper odio. Nunc sollicitudin nisl in libero egestas, et egestas nunc commodo. Proin blandit lorem id pretium placerat.</p>
+
+				<p>Ut auctor scelerisque elit et accumsan. Praesent commodo vestibulum dignissim. Nam a varius ex. Donec varius consequat maximus. Cras imperdiet elementum ultricies. Pellentesque eu feugiat mi. Nullam et ante at leo cursus mattis eu quis leo. Donec eget lobortis ipsum, finibus pharetra elit. Sed lacinia a mi vel congue. Aliquam erat volutpat. Nulla ultricies laoreet nulla, vel accumsan ligula finibus sit amet. Nulla tincidunt volutpat hendrerit. Aenean finibus fermentum tellus eu venenatis. Morbi non ultrices tellus. Etiam sed eros enim.</p>	
+
+			</article>
+
+		</section>
+
+		<footer>
+			
+			<p>Desenvolvido por Samuel Zechin</p>
+		</footer>
+	</body>
+</html>
